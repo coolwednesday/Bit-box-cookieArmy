@@ -1,3 +1,2 @@
 # Bit-box-cookieArmy
-Aim:
-image.png
+Aim: BIT_BOX 3.0 hackathon project
