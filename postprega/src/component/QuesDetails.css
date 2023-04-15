@@ -1,0 +1,25 @@
+.details h2{
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.detail_desc{
+    background-color: #bbbbfa;
+    padding: 22px;
+    border-radius: 35px;
+}
+.detail_other{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+}
+.detail_other p{
+    margin-right: 30px;
+}
+.comments{
+    background-color: #bbbbfa;
+    padding: 17px;
+    border-radius: 30px;
+}

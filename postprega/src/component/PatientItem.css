@@ -1,0 +1,17 @@
+.cont-pat{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    height: 100px;
+    width: 1000px;
+    margin: 10px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.dia-but{
+    padding: 16px;
+    background-color: pink;
+    border-radius: 20px;
+}

@@ -1,0 +1,12 @@
+.patients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dia-but{
+    padding: 16px;
+    background-color: pink;
+    border-radius: 20px;
+}

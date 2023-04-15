@@ -1,26 +1,11 @@
-import './App.css';
-import Navbar from './component/Navbar';
-import Sidebar from './component/Sidebar';
-import Whitespace from './component/whitespace';
-import Front from './component/front';
-import Question from './component/Question'
-import QuesDetails from './component/QuesDetails'
-import Signup from "./component/signup";
-import Login from "./component/login";
-import Quiz from './component/quiz';
-import DietPlan from './component/DietPlan';
-import Header from './component/Header';
-import Dlogin from './component/Dlogin';
-import PatientList from './component/PatientList';
-import Prescription from './component/Prescription';
-import {
-  BrowserRouter as Router,
-  Route, 
-  Switch
-} from "react-router-dom";
-import Doctors from './component/Doctor';
-import whitespace from './component/whitespace';
-function App() {
+import React from 'react'
+import Header from './Header'
+import Question from './Question'
+import QuesDetails from './QuesDetails'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './whitespace.css'
+
+export default function whitespace() {
   const questions = [
     {
       id: 0,
@@ -1022,74 +1007,11 @@ function App() {
         "content": "A six-week ban on abortion is headed to Florida Gov. Ron DeSantis' desk after the state House, which has a Republican supermajority, passed the bill, 70 to 40 on Thursday.\r\nSenate Bill 300, titled th… [+6649 chars]"
       }, 
 ]
-  
   return (
-   
-    
-    
-    
-      <Router>
-      <div className='row'>
-      <Switch>
-          <Route exact path="/">
-            <Front/>
-          </Route>
-          <Route exact path="/Whitespace">
-            <Whitespace/>
-          </Route>
-          <Route path="/r/doctor">
-            <div>
-            <Header/>
-          <Doctors city={"delhi"} country={"india"}/>
-          </div>
-          </Route>
-          <Route path="/r/diet">
-            <div>
-            <Header/>
-          <DietPlan/>
-          </div>
-          </Route>
-          <Route exact path="/Forum" >
-          <div>
-          <Header/>
-          <Question questions = {questions}/>
-          </div>
-          </Route>
-          <Route exact path="/Details/:id" >
-          <div>
-          <Header/>
-          <QuesDetails questions = {questions}/>
-          </div>
-          </Route>
-          <Route exact path="/r/quiz" >
-          <div>
-         <Header/>
-          <Quiz/>
-          </div>
-          </Route>
-          <Route exact path="/doc/login" >
-          <Dlogin/>
-          </Route>
-          <Route exact path="/patient" >
-          <PatientList/>
-          </Route>
-          <Route exact path="/Prescription" >
-         <Prescription/>
-          </Route>
-          <Route exact path="/login" >
-          <Login/>
-          </Route>
-          
-          <Route exact path="/signup" >
-          <Signup/>
-          </Route>
-
-           </Switch>
-      </div>
-      </Router>
-     
-    
-  );
+    <Router>
+    <div className='main'>
+      <Header/>
+    </div>
+    </Router>
+  )
 }
-
-export default App;

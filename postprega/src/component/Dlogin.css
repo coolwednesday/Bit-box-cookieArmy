@@ -1,0 +1,39 @@
+.logincont{
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.logincont form{
+   
+    border: 3px solid #bbbbfa;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: white;
+}
+.signin{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    height: 500px;
+    width: 350px;
+    justify-content: center;
+    padding-top: 50px;
+    
+}
+
+.logocont{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+.error-cont{
+    margin-top: 10px;
+    padding-left: 47px;
+}
+.error{
+    height: 0;
+    display: flex;
+}

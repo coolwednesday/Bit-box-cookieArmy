@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.full{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   
+    
+    padding-top: 30px;
+   
+    padding-bottom: 30px;
+
+}
+
+hr{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.container2{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.container2 header{
+     font-size: 20px;
+     font-weight: 600;
+     color: #333;
+
+}
+
+.container2 header ::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+
+.container2 form{
+    position : relative;
+    min-height: 490px;
+    margin-top: 16px;
+    background-color: #fff;
+
+}
+
+.container2 form .details{
+    margin-top: 30px;
+}
+
+.container2 form .details.guardian{
+    margin-top: 10px;
+}
+
+.container2 form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container2 form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px;
+}
+
+.input-field label{
+    font-size: 15px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    
+}
+
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+
+}
+
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+.allergies label{
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 12px;
+}
+
+.allergies textarea{
+    margin-left: 10px;
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.deficiency label{
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 12px;
+}
+
+.disease input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    width: 550px;
+    
+}
+
+.disease input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+
+}
+
+.disease input[type="date"]:valid{
+    color: #333;
+}
+
+.container2 form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    margin: 25px 0;
+    background-color: #4070f4;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #265df2;
+}
+
+.Submit_button button{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
